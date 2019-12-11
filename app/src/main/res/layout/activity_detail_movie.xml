@@ -35,11 +35,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorPrimaryDark"
-<<<<<<< HEAD
-            android:text="rilis"
-=======
+
             android:text="release"
->>>>>>> a036b9f5603d3bcf7f074a76317b86b8b3d1cd63
             android:textAlignment="textStart"
             android:textColor="@android:color/white"
             android:textStyle="bold"
@@ -94,11 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@color/colorPrimaryDark"
-<<<<<<< HEAD
-            android:text="deskirpsi"
-=======
             android:text="deskripsinya"
->>>>>>> a036b9f5603d3bcf7f074a76317b86b8b3d1cd63
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textStyle="bold"
