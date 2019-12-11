@@ -4,12 +4,30 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Movies implements Parcelable {
-    String title, deskripsi, images;
+    String title, deskripsi, images, rating, rilis;
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    public String getRilis() {
+        return rilis;
+    }
+
+    public void setRilis(String rilis) {
+        this.rilis = rilis;
+    }
 
     protected Movies(Parcel in) {
         title = in.readString();
         deskripsi = in.readString();
         images = in.readString();
+        rating = in.readString();
+        rilis = in.readString();
     }
 
     public static final Creator<Movies> CREATOR = new Creator<Movies>() {
@@ -62,5 +80,7 @@ public class Movies implements Parcelable {
         parcel.writeString(title);
         parcel.writeString(deskripsi);
         parcel.writeString(images);
+        parcel.writeString(rilis);
+        parcel.writeString(rating);
     }
 }

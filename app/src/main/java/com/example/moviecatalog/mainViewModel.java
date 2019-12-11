@@ -41,7 +41,8 @@ public class mainViewModel extends ViewModel {
                         Movies movies = new Movies();
 
                         movies.setTitle(jsonObject.getString("title"));
-
+                        movies.setRating(jsonObject.getString("vote_average"));
+                        movies.setRilis(jsonObject.getString("release_date"));
                         movies.setDeskripsi(jsonObject.getString("overview"));
                         movies.setImages(jsonObject.getString("poster_path"));
 
